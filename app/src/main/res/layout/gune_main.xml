@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@drawable/line4">
+        <TextView
+            android:id="@+id/back_button"
+            android:layout_width="105dp"
+            android:layout_height="match_parent"
+            android:text="뒤로가기"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textColor="@color/black"
+            />
+
+        <TextView
+            android:layout_width="198dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="건의사항"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="건의사항"
+        android:layout_gravity="center"
+        android:textSize="45dp"
+        android:fontFamily="@font/font2"
+        android:textColor="@color/black"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:descendantFocusability="blocksDescendants" />
+
+        <Button
+            android:id="@+id/input_gune"
+            android:layout_width="145dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            android:layout_below="@id/listView"
+            android:layout_centerInParent="true"
+            android:text="건의사항\n올리기"
+            android:textSize="21dp" />
+    </RelativeLayout>
+</LinearLayout>

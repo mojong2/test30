@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".GongjiInsertActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@drawable/line">
+        <TextView
+            android:id="@+id/back_button"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:text="뒤로가기"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:text="공지사항"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/size_up_button"
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:drawableBottom="@drawable/coding_pmbutton" />
+
+        <TextView
+            android:id="@+id/size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작게"
+            android:textColor="@color/black"
+            android:textSize="31dp"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/size_small_button"
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:drawableBottom="@drawable/coding_mbutton" />
+        <View
+            android:layout_width="30dp"
+            android:layout_height="60dp"/>
+        <TextView
+            android:id="@+id/today_text"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:text="작성일자 : 2022.03.29"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+
+        >
+
+        <View
+            android:id="@+id/empty_view"
+            android:layout_width="7dp"
+            android:layout_height="41dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/line3" />
+
+        <EditText
+            android:id="@+id/title_text"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/empty_view"
+            android:hint="제목"
+            android:background="@null"
+            android:maxLines="1"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="22dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="408dp">
+
+        <View
+            android:id="@+id/empty_view1"
+            android:layout_width="7dp"
+            android:layout_height="41dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/line3" />
+
+        <EditText
+            android:id="@+id/contents_text"
+            android:layout_width="match_parent"
+            android:layout_height="407dp"
+            android:layout_toRightOf="@id/empty_view1"
+            android:gravity="start"
+            android:background="@null"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="113dp">
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="match_parent" />
+        <CheckBox
+            android:id="@+id/import_btn"
+            android:layout_width="31dp"
+            android:layout_height="31dp" />
+
+        <TextView
+            android:layout_width="139dp"
+            android:layout_height="69dp"
+            android:gravity="center"
+            android:text="중요 공지사항"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/regis_button"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:text="공지사항 \n올리기"
+            android:textColor="@color/black"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

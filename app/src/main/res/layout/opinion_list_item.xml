@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/empty_view"
+            android:layout_width="21dp"
+            android:layout_height="match_parent" />
+
+        <View
+            android:id="@+id/empty_view1"
+            android:layout_width="15dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="95dp"
+            android:layout_height="42dp"
+            android:layout_toRightOf="@id/empty_view"
+            android:fontFamily="@font/font1"
+            android:gravity="center"
+            android:text="김범수"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/user_text"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/user_name"
+            android:layout_marginLeft="29dp"
+            android:layout_toRightOf="@id/empty_view1"
+            android:autoSizeMinTextSize="29dp"
+            android:autoSizeTextType="uniform"
+            android:fontFamily="@font/font1"
+            android:text="그말에 동의합니다."
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:id="@+id/user_date"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:text="04/23 01:36"
+            android:textColor="#4E4E4E"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/delete_button"
+            android:layout_width="62dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/user_date"
+            android:gravity="center"
+            android:text="삭제"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <View
+            android:layout_width="350dp"
+            android:layout_height="10dp"
+            android:layout_below="@id/user_text"
+            android:layout_centerInParent="true"
+            android:background="@drawable/line5" />
+    </RelativeLayout>
+
+</LinearLayout>

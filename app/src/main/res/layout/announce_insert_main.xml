@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".AnounceActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@drawable/line">
+        <TextView
+            android:id="@+id/back_button"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:text="뒤로가기"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/firebaseToken"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:text="방송 하기"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/MikeBtn"
+        android:layout_width="330dp"
+        android:layout_height="340dp"
+        android:layout_gravity="center"
+        android:background="@drawable/mike_1" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/txt_recordTime1"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="125dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="00 :"
+            android:textSize="50dp"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText"
+            />
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/txt_recordTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="00"
+            android:textSize="50dp"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@id/txt_recordTime1"
+            android:textColor="@color/black"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <com.example.test30.RecordButton
+            android:id="@+id/recordButton"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:background="@drawable/shape_circle_button" />
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="30dp"
+            android:layout_toLeftOf="@id/recordButton"
+            android:text="초기화"
+            android:textSize="25dp"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/inputButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/recordButton"
+            android:text="올리기"
+            android:textSize="25dp"
+            tools:ignore="HardcodedText" />
+    </RelativeLayout>
+</LinearLayout>

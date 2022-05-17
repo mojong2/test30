@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@drawable/line4"
+        >
+        <TextView
+            android:id="@+id/back_button"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:text="뒤로가기"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:text="설정"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+        <View
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/logout_button"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/line4"
+            android:text="로그아웃"
+            android:textSize="26dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/Version_button"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/logout_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/line4"
+            android:text="현재 버젼"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/Current_Version_button"
+            android:layout_width="330dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/Version_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:text="1.0"
+            android:textSize="26dp"
+            android:visibility="gone"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/delete_id"
+            android:layout_width="350dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/Version_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/line4"
+            android:text="계정 탈퇴"
+            android:textColor="@color/black"
+            android:textSize="26dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/password_input"
+            android:layout_width="330dp"
+            android:layout_height="65dp"
+            android:layout_below="@id/delete_id"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:hint="비밀번호를 입력하세요"
+            android:inputType="textPassword"
+            android:visibility="gone"
+            android:shadowColor="@color/black"
+            android:textColorHint="@color/black"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/really_delete"
+            android:layout_width="150dp"
+            android:layout_height="60dp"
+            android:layout_below="@id/password_input"
+            android:layout_centerHorizontal="true"
+            android:text="계정 탈퇴하기"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

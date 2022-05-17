@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".MainActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@drawable/line">
+        <TextView
+            android:id="@+id/back_button"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:text="뒤로가기"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:text="건의사항"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <Button
+            android:id="@+id/size_up_button"
+            android:layout_width="59dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:drawableBottom="@drawable/coding_pmbutton" />
+
+        <TextView
+            android:id="@+id/size_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="작게"
+            android:textColor="@color/black"
+            android:textSize="30dp"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/size_small_button"
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:drawableBottom="@drawable/coding_mbutton" />
+        <TextView
+            android:id="@+id/today_text"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:text="작성일자 : 2022.03.29"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/line2"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:maxLines="1"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="22dp" />
+
+    <EditText
+        android:id="@+id/contents_text"
+        android:layout_width="match_parent"
+        android:layout_height="407dp"
+        android:background="@drawable/line2"
+        android:gravity="start"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <View
+            android:layout_width="25dp"
+            android:layout_height="match_parent" />
+        <CheckBox
+            android:id="@+id/secret_btn"
+            android:layout_width="31dp"
+            android:layout_height="31dp" />
+
+        <TextView
+            android:layout_width="139dp"
+            android:layout_height="69dp"
+            android:gravity="center"
+            android:text="비밀글 작성하기"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/regis_button"
+            android:layout_width="180dp"
+            android:layout_height="match_parent"
+            android:background="#00FFFFFF"
+            android:text="건의사항 \n올리기"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+</LinearLayout>

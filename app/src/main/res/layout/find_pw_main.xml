@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".FindPwActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <View
+            android:layout_width="14dp"
+            android:layout_height="76dp" />
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="35dp"
+            android:layout_height="83dp"
+            android:background="@drawable/back_button" />
+
+        <View
+            android:layout_width="65dp"
+            android:layout_height="90dp" />
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="204dp"
+            android:background="@drawable/login_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+
+        >
+
+        <View
+            android:layout_width="13dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="397dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font2"
+            android:text="비밀번호를 찾고자 하는 아이디를 입력해주세요."
+            android:textColor="@color/black"
+            android:textSize="19dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/empty_view"
+            android:layout_width="11dp"
+            android:layout_height="46dp" />
+
+        <View
+            android:id="@+id/empty_view1"
+            android:layout_width="20dp"
+            android:layout_height="40dp" />
+
+        <View
+            android:id="@+id/empty_view2"
+            android:layout_width="330dp"
+            android:layout_height="67dp"
+            android:layout_toRightOf="@id/empty_view"
+            android:background="@drawable/line3" />
+
+        <EditText
+            android:id="@+id/text1"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/empty_view1"
+            android:background="@null"
+            android:inputType="textEmailAddress"
+            android:maxLength="20"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/auth_button1"
+            android:layout_width="77dp"
+            android:layout_height="67dp"
+            android:layout_toRightOf="@id/empty_view2"
+            android:background="@drawable/line3"
+            android:text="인증"
+            android:textSize="19dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/error_text_1"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:textSize="20dp"
+        android:gravity="center_horizontal"
+        android:text="아이디를 입력하세요"
+        android:textColor="@color/black" />
+
+    <ImageButton
+        android:id="@+id/check_button"
+        android:layout_width="325dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:background="@drawable/findpw_checkbutton" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="17dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이디가 기억나지 않는다면?  "
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/find_id_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#000000"
+            android:text="아이디 찾기"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+</LinearLayout>

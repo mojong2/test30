@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "917218010828",
+    "project_id": "playgongji",
+    "storage_bucket": "playgongji.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917218010828:android:a092a6bfbb973d3f828469",
+        "android_client_info": {
+          "package_name": "com.example.test30"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "917218010828-5iv3actagdjcrhg84d7mp3bk7f891j1h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMs3nVCaMfrqfpARxnq98CNTFr3724VBg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "917218010828-5iv3actagdjcrhg84d7mp3bk7f891j1h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

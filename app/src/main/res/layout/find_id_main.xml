@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background"
+    tools:context=".FindIdActivity">
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <View
+            android:layout_width="14dp"
+            android:layout_height="76dp" />
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="35dp"
+            android:layout_height="83dp"
+            android:background="@drawable/back_button" />
+
+        <View
+            android:layout_width="65dp"
+            android:layout_height="90dp" />
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="204dp"
+            android:background="@drawable/login_logo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+
+        >
+
+        <View
+            android:layout_width="13dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="397dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font2"
+            android:text="회원정보에 등록한 휴대전화로 인증번호 받기."
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/empty_view"
+            android:layout_width="11dp"
+            android:layout_height="46dp" />
+
+        <View
+            android:id="@+id/empty_view1"
+            android:layout_width="20dp"
+            android:layout_height="40dp" />
+
+        <View
+            android:layout_width="395dp"
+            android:layout_height="67dp"
+            android:layout_toRightOf="@id/empty_view"
+            android:background="@drawable/line3" />
+
+        <EditText
+            android:id="@+id/user_name"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/empty_view1"
+            android:background="@null"
+            android:hint="이름"
+            android:maxLength="20"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/empty_view6"
+            android:layout_width="14dp"
+            android:layout_height="40dp" />
+
+        <TextView
+            android:id="@+id/empty_view11"
+            android:layout_width="24dp"
+            android:layout_height="67dp"
+            android:layout_toRightOf="@id/user_phone1"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <TextView
+            android:id="@+id/empty_view12"
+            android:layout_width="24dp"
+            android:layout_height="67dp"
+            android:layout_toRightOf="@id/user_phone2"
+            android:gravity="center"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="50dp" />
+
+        <EditText
+            android:id="@+id/user_phone1"
+            android:layout_width="77dp"
+            android:layout_height="67dp"
+            android:layout_toRightOf="@id/empty_view6"
+            android:background="@drawable/line3"
+            android:gravity="center"
+            android:hint="010"
+            android:inputType="number"
+            android:maxLength="3"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/user_phone2"
+            android:layout_width="97dp"
+            android:layout_height="67dp"
+            android:layout_toRightOf="@id/empty_view11"
+            android:background="@drawable/line3"
+            android:gravity="center"
+            android:hint="1234"
+            android:inputType="number"
+            android:maxLength="4"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/user_phone3"
+            android:layout_width="97dp"
+            android:layout_height="67dp"
+            android:layout_toRightOf="@id/empty_view12"
+            android:gravity="center"
+            android:maxLength="4"
+            android:hint="5678"
+            android:background="@drawable/line3"
+            android:inputType="number"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:textSize="30dp" />
+
+        <Button
+            android:id="@+id/auth_button"
+            android:layout_width="77dp"
+            android:layout_height="67dp"
+            android:layout_toRightOf="@id/user_phone3"
+            android:background="@drawable/line3"
+            android:text="인증"
+            android:textSize="19dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <View
+            android:layout_width="38dp"
+            android:layout_height="61dp" />
+
+        <TextView
+            android:id="@+id/error_text_1"
+            android:layout_width="355dp"
+            android:layout_height="61dp"
+            android:textColor="#FF0000"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/empty_view8"
+            android:layout_width="11dp"
+            android:layout_height="46dp" />
+
+        <View
+            android:id="@+id/empty_view9"
+            android:layout_width="20dp"
+            android:layout_height="40dp" />
+
+        <View
+            android:id="@+id/empty_view10"
+            android:layout_width="395dp"
+            android:layout_height="67dp"
+            android:layout_toRightOf="@id/empty_view8"
+            android:background="@drawable/line3" />
+
+        <EditText
+            android:id="@+id/auth_num"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_toRightOf="@id/empty_view9"
+            android:background="@null"
+            android:hint="인증번호 숫자 6자리"
+            android:maxLength="6"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/black"
+            android:textColorHint="#757575"
+            android:textSize="30dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <View
+            android:layout_width="38dp"
+            android:layout_height="61dp" />
+
+        <TextView
+            android:id="@+id/error_text_2"
+            android:layout_width="357dp"
+            android:layout_height="61dp"
+            android:textColor="#FF0000"
+            android:textSize="20dp" />
+    </LinearLayout>
+    <ImageButton
+        android:id="@+id/login_button"
+        android:layout_width="325dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:background="@drawable/findpw_checkbutton" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        >
+
+        <View
+            android:layout_width="38dp"
+            android:layout_height="61dp" />
+
+        <TextView
+            android:id="@+id/error_text_3"
+            android:layout_width="326dp"
+            android:layout_height="61dp"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+    </LinearLayout>
+</LinearLayout>

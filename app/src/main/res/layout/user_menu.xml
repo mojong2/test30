@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login_background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="69dp"
+        android:background="@drawable/line4"
+        >
+        <TextView
+            android:id="@+id/back_button"
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:text="뒤로가기"
+            android:gravity="center"
+            android:textSize="30dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:layout_width="135dp"
+            android:layout_height="match_parent"
+            android:text="마이페이지"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="29dp"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <RelativeLayout
+                android:id="@+id/empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line1"
+                >
+
+                <TextView
+                    android:id="@+id/text_weather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="오늘의 전주날씨"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/image_weather"
+                    android:layout_width="200dp"
+                    android:layout_below="@id/text_weather"
+                    android:layout_height="200dp"
+                    android:background="@drawable/yellow_star" />
+                <TextView
+                    android:id="@+id/current_degree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_toRightOf="@id/image_weather"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="30dp"
+                    android:text="393.23도"
+                    />
+                <TextView
+                    android:id="@+id/current_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:layout_toRightOf="@id/image_weather"
+                    android:layout_below="@id/current_degree"
+                    android:layout_marginLeft="50dp"
+                    android:textSize="30dp"
+                    android:text="맑음"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/empty_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/empty_view"
+                android:background="@drawable/line1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="오늘의 걸음"
+                    android:layout_centerHorizontal="true"
+                    />
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/good_image"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="140걸음"
+                    android:textSize="30dp"
+                    android:layout_marginTop="240dp"
+                    android:layout_centerHorizontal="true"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_below="@id/empty_view1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/line1"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="근처 병원!!!!!!!!!!!!!"
+                    android:textSize="600dp"
+                    />
+
+
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
